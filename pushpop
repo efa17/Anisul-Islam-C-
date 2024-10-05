@@ -1,0 +1,28 @@
+#include <stdio.h>
+#define capacity 3
+int stack[capacity];
+int top=1;
+void push(int x){
+    if(top<capacity+1){
+        top=top+1;
+        stack[top]=x;
+        printf(" Successfully added item: %d", x);
+    }
+    else{
+        printf("Exception! No space\n");
+    }
+}
+int pop(){
+    return -1;
+}
+int peek(){
+    return -1;
+}
+int main() {
+    // Write C code here
+    printf("show my numbers\n");
+    push(10);
+    push(20);
+   
+    return 0;
+}
